@@ -1,0 +1,81 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package javaapplication105;
+import java.util.Scanner;
+/**
+ *
+ * @author STUDENT
+ */
+public class JavaApplication105 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        int num;
+    System.out.print("enter num from 1 to 12");
+    num=input.nextInt();
+    if (num==12 || num==1 || num==2)
+        System.out.println("winter");
+    else if (num==3||num==4||num==5)
+        System.out.println("spring");
+    else if (num==6||num==7||num==8)
+        System.out.println("summer");
+    else System.out.println("fall");
+    
+            
+    
+    }
+    
+}
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package javaapplication104;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author STUDENT
+ */
+public class JavaApplication104 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+        System.out.print("enter num");
+        int num;
+        num=input.nextInt();
+        
+        if (num%3==0&&num%5==0){
+            System.out.println("by 3 and 5");
+            
+        }
+        else if (num%3==0&&num%5!=0){
+            System.out.println("by 3");
+            
+        }
+        else if (num%5==0&&num%3!=0){
+            System.out.println("by 5");
+        }
+    }
+        
+        
+        
+        
+    }
+    
+}
+
