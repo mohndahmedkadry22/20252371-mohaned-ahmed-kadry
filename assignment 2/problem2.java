@@ -11,5 +11,5 @@ public class Sheet2_Problem2 {
       System.out.println("Not a leap year");  
     }  
     input.close();
-  } 
+  }  
 }
