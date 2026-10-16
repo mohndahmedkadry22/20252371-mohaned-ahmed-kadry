@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Sheet1_Problem1 {  
 public static void main(String[] args) { 
 Scanner input = new Scanner(System.in); 
