@@ -12,4 +12,4 @@ Scanner input = new Scanner(System.in);
     System.out.printf("Subtotal = %.2f, Tax = %.2f, Total = %.2f%n", subtotal, tax, total); 
     input.close(); 
   } 
-}
+} 
