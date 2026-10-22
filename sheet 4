@@ -1,0 +1,113 @@
+Q1
+    public static int getInt(Scanner s, String prompt)
+{ System.out.print(prompt);
+int number = s.nextInt();
+return number; }
+    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+    int age = getInt(input, "Enter your age: ");
+    System.out.println("Recorded Age: " + age);
+        
+        
+        
+        
+    }
+    
+}
+
+Q2
+public static double calculateDistance(double x1, double y1,double x2, double y2) {
+        double  distance =Math.sqrt(Math.pow(x2 - x1,2) + Math.pow(y2 - y1, 2));
+        return distance;
+    }
+
+  public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter x1, y1, x2, y2:");
+
+        double x1 = input.nextDouble();
+        double y1 = input.nextDouble();
+        double x2 = input.nextDouble();
+        double y2 = input.nextDouble();
+
+        double distance = calculateDistance(x1, y1, x2, y2);
+
+        System.out.printf("Distance: %.2f%n", distance);
+
+        input.close();
+    }
+} 
+Q3
+public class JavaApplication82 {
+
+  //   Area of a circle
+public static double computeArea(double radius) {
+    return Math.PI * radius * radius;
+}
+
+// Area of a rectangle
+public static double computeArea(double length, double width) {
+    return length * width;
+}
+
+// Area of a triangle
+public static double computeArea(double base, double height, boolean isTriangle) {
+    return 0.5 * base * height;
+}
+    public static void main(String[] args) {
+       System.out.println("Circle Area = " + computeArea(5.0));
+
+    System.out.println("Rectangle Area = " + computeArea(4.0, 6.0));
+
+    System.out.println("Triangle Area = " + computeArea(4.0, 6.0, true));
+    }
+    
+}
+Q4
+public static boolean isValidPassword(String password) {
+    if (password.length() < 8) {
+        return false;
+    }
+
+    int digits = 0;
+    boolean hasUppercase = false;
+
+    for (int i = 0; i < password.length(); i++) {
+        char ch = password.charAt(i);
+
+        if (!Character.isLetterOrDigit(ch)) {
+            return false;
+        }
+
+        if (Character.isDigit(ch)) {
+            digits++;
+        }
+
+        if (Character.isUpperCase(ch)) {
+            hasUppercase = true;
+        }
+    }
+
+    return digits >= 2 && hasUppercase;
+}
+
+   
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+    System.out.print("Enter a password: ");
+    String password = input.nextLine();
+
+    if (isValidPassword(password)) {
+        System.out.println("Valid Password");
+    } else {
+        System.out.println("Invalid Password");
+    }
+
+    }
+    
+}
+
